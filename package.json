@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "description": "call the callback in my database",
   "author": "Daniel Waruo",
-  "license": "ISC",
-  "engines": {
-    "node": "14.x"
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
+    "next": "latest",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "axios": "^0.21.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
   }
 }

@@ -1,5 +1,4 @@
-const axios = require('axios');
-
+import axios from "axios";
 
 let URL_CALLBACK = process.env.URL_CALLBACK;
 
@@ -17,7 +16,11 @@ const sendCallback = (data) => {
 }
 
 
-module.exports = (req, res) => {
+export default function handler(req, res) {
+  // Get data from your database
   sendCallback(req.query);
-  res.status(200).send({message: "Callback has been well Received", data: req.body})
+  res.status(200).json({
+    message: "Callback has been well Received",
+    data: req.body
+  })
 }
