@@ -1,0 +1,13 @@
+{
+  "name": "ipay-callback",
+  "version": "1.0.0",
+  "description": "call the callback in my database",
+  "author": "Daniel Waruo",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
